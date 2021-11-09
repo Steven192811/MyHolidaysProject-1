@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your interes to visit the Dominican republic.">
+    <meta name="keywords" content="Interest, travel, flights, santo domingo, dominican republic">
+    <title>Share Your Interest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background-body">
+
+    <header class="page-header1 text-center text-uppercase">
+        <!--title of the form with different classes-->
+        <div>
+           <h1>Share your interest</h1>
+       </div>
+   </header>
+
+        <!--share your interest form with post method so it collects and sends information to the server without changing any information from the server-->
+      <form action="https://formdump.codeinstitute.net" method="POST">
+        <!--fieldset element to wrap areas from the form-->
+        <fieldset>
+          <!--legend tag to defines a caption for the fieldset element and "your details" information-->
+         
+          <legend>Your details</legend>
+          
+      <!--div element containing the "name" attribute with its place holder and appropiate labels-->
+          <div class="float-left">
+            <label for="name-field" class="block-label">Name</label>
+            <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+          </div>
+          <!--div element containing the "email" attribute with its place holder and appropiate labels-->
+          <div class="float-left">
+            <label for="email-field" class="block-label">Email</label>
+            <input id="email-field" type="email" name="email" placeholder="Your email" required>
+          </div>
+          
+      <!--option menu to choose your age range-->
+          <label for="age" class="block-label">Age</label>
+          <select id="age" name="age" required>
+            <option value="under-20">Under 20</option>
+            <option value="20s">20-29</option>
+            <option value="30s">30-39</option>
+            <option value="40s">40-49</option>
+            <option value="50s">50-59</option>
+            <option value="60+">60+</option>
+          </select>
+        </fieldset>
+    
+      <fieldset>
+        <!--checkbox option menu to choose multiple choices-->
+            <legend>Places we could visit</legend>
+            <div>
+              <input type="checkbox" id="santo-domingo-checkbox" name="city">
+              <label for="santo-domingo-checkbox">Santo Domingo</label>
+            </div>
+            <div>
+              <input type="checkbox" id="punta-cana-checkbox" name="city">
+              <label for="punta-cana-checkbox">Punta Cana</label>
+            </div>
+            <div>
+              <input type="checkbox" id="santiago-checkbox" name="city">
+              <label for="santiago-checkbox">Santiago</label>
+            </div>
+            <div>
+              <input type="checkbox" id="jarabacoa-checkbox" name="city">
+              <label for="jarabacoa-checkbox">Jarabacoa</label>
+            </div>
+            <div>
+              <input type="checkbox" id="dajabon-checkbox" name="city">
+              <label for="dajabon-checkbox">Dajabon</label>
+            </div>
+        
+         <!--radio menu to only choose one of the options-->
+        <legend>When would you like to come?</legend>
+        
+        <div>
+            <input id="may-2022" name="month" value="may-2022" type="radio" required>
+            <label for="may-2022">May 2022</label>
+        </div>
+        
+        <div>
+            <input id="june-2022" name="month" value="june-2022" type="radio" required>
+            <label for="june-2022">June 2022</label>
+        </div>
+        
+        <div>
+            <input id="july-2022" name="month" value="july-2022" type="radio" required>
+            <label for="july-2022">July 2022</label>
+        </div> 
+        
+        <div>
+            <input id="august-2022" name="month" value="august-2022" type="radio" required>
+            <label for="august-2022">August 2022</label>
+        </div>
+        
+        <div>
+            <input id="september-2022" name="month" value="september-2022" type="radio" required>
+            <label for="september-2022">September 2022</label>
+        </div>
+        </fieldset>
+        
+        <!--feedback section from the website-->
+        <div class="text-center fixFeedback">
+           <h3>Feedback</h3>
+            <label for="feedback" class="block-label">How can we improve your experience with us?</label>
+            <br>
+          <textarea id="feedback" rows="7" cols="50" name="feedback"></textarea>
+        </div>
+        <div style="display: inline-block;">
+          <input type="submit" value="Share your Interest!" class="block-label">
+          <input type="reset" value="Reset Form" class="block-label">
+        </div>
+    </form>
+    
+</body>
+</html>
