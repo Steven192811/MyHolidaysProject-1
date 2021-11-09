@@ -26,13 +26,8 @@ The purpose with the website is to target different users who are interested in 
 #### CSS 
 * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
-### Unfixed bugs 
-* The content of the header are not responsive enough when viewed from a small screen.
-*The padding from the paragraphs next to the city images are not functioning the way I would like them to do since I would like to keep some space between the images and the texts but it ends up too close. 
+### Unfixed bugs  
 * Form is not fully centered on the screen, it's a bit off to the right side.
-### fixed bugs
-* Fully responsive header.
-* Padding was successfully added to the texts besides the images.
 
 ### Deployment 
 * The site was deployed to the GitHub website. The steps to deploy are as follows:
